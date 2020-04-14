@@ -1,0 +1,8 @@
+=========================
+2020年4月5日
+=========================
+To commit Terminal Run 
+	pw: open git origin website
+	pjc: commit
+
+
