@@ -1,4 +1,17 @@
 remove.packages("OsakaUniv2020")
+
+library("OsakaUniv2020")
+
+help(package = "OsakaUniv2020")
+
+str(Satisfaction)
+
+dimnames(Satisfaction)
+
+
+
+
+remove.packages("OsakaUniv2020")
 install.packages("OsakaUniv2020")
 
 help(package = "OsakaUniv2020")

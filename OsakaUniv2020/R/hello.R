@@ -15,10 +15,23 @@ Satisfaction <-
                  dimnames =
                    list(Income =
                           c("<5000", "5000-15000",
-                            "15000-25000", ">25000"),
+                              "15000-25000", ">25000"),
                         "Job Satisfaction" =
                           c("V_D", "L_S", "M_S", "V_S"),
                         Gender = c("Female", "Male"))))
+
+
+
+
+# crab<-read.table("crab.txt", col.names=c("C","S","W","Sa","Wt"), header=T)
+
+crab <- read.table("crab.txt", header = T)
+crab <- crab[c("satell", "color", "spine", "width" ,  "weight")]
+
+
+
+
+
 
 
 
