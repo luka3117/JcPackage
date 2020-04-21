@@ -2,7 +2,7 @@
 \alias{count.to.case}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-changing count data frame into usual data frame
+changing grouped data frame into ordinary data frame
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
