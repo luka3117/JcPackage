@@ -11,7 +11,7 @@ CDA horshoe crab data}
   A data frame with 173 observations on the following 5 variables.
   \describe{
   "satell", "color", "spine", "width" ,  "weight"
-    \item{\code{satell}}{integer}
+    \item{\code{satell}}{response variable, non negative integer variable}
     \item{\code{color}}{odered categorical variable}
     \item{\code{spine}}{spine condition, categorical variable}
     \item{\code{width}}{cm, continuous variable}
