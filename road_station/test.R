@@ -1,3 +1,6 @@
+
+suppressMessages(library(tidyverse))
+
 remove.packages("RoadStation")
 
 # install.packages("RoadStation_0.1.0.tar.gz", repos = NULL)
@@ -6,7 +9,14 @@ devtools::install_local("/Users/jclee/road_station")
 
 library(RoadStation)
 
-RoadStation::
+help(package = "RoadStation")
+
+RoadStation::d
+
+y<-d$地産地消意識 %>% factor()
+
+model.matrix(~y-1)
+model.matrix(~d$地産地消意識-1, )
 
 help(Michi_Eki_data)
 help(Michi_Eki_data)

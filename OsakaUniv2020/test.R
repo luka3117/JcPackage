@@ -1,5 +1,7 @@
 remove.packages("OsakaUniv2020")
 
+system("open .")
+
 library("OsakaUniv2020")
 
 help(package = "OsakaUniv2020")
@@ -7,6 +9,9 @@ help(package = "OsakaUniv2020")
 str(Satisfaction)
 
 dimnames(Satisfaction)
+
+
+OsakaUniv2020::Myocardinal.Infarction
 
 
 

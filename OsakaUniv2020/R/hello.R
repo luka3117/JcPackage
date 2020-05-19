@@ -29,9 +29,16 @@ crab <- read.table("crab.txt", header = T)
 crab <- crab[c("satell", "color", "spine", "width" ,  "weight")]
 
 
+# Myocardinal.Infarction ----------------------------------------------------------------
+
+Myocardinal.Infarction <-
+  matrix(c(18, 5, 171, 99, 10845, 10933), ncol = 3)
+
+colnames(Myocardinal.Infarction) <-
+  c("FatalAttack", "NonfatalAttack", "NoAttack")
+
+rownames(Myocardinal.Infarction) <- c("Placebo", "Asprin")
 
 
-
-
-
+Myocardinal.Infarction <- as.table(Myocardinal.Infarction)
 
