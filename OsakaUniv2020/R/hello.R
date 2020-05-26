@@ -6,6 +6,12 @@ count.to.case <- function(df, count.variabe) {
 
 # count.to.case(df = df.count,  count.variabe = "Freq")
 
+OR <- function(table) {
+  (table[1,1]*table[2,2])/(table[1,2]*table[2,1])
+}
+# OR(df = table or matrix 2 by 2)
+
+
 
 # Myocardinal.Infarction ----------------------------------------------------------------
 
