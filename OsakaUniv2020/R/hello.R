@@ -38,7 +38,28 @@ colnames(Myocardinal.Infarction) <-
   c("FatalAttack", "NonfatalAttack", "NoAttack")
 
 rownames(Myocardinal.Infarction) <- c("Placebo", "Asprin")
-
-
 Myocardinal.Infarction <- as.table(Myocardinal.Infarction)
+
+
+
+
+
+# death penalty -----------------------------------------------------------
+
+death.penalty <- c("yes", "no")
+def.race <- c("white", "black")
+vic.race <- c("white", "black")
+datalabel <-
+  list(victim = vic.race,
+       defendant = def.race,
+       death = death.penalty)
+table.2.6 <-
+  expand.grid(death = death.penalty,
+              defendant = def.race,
+              victim = vic.race)
+data <- c(53, 414, 11, 37, 0, 16, 4, 139)
+(death.penalty.table.2.6 <- cbind(table.2.6, count = data)) # id by variable type data
+
+death.penalty.df <-
+  count.to.case(death.penalty.table.2.6, count.variabe = "count")
 
