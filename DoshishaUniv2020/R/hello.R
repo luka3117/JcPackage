@@ -7,6 +7,13 @@
 
 galton<- read.csv("galton.csv")
 
+# https://online.stat.psu.edu/stat501/lesson/13/13.1
+galton.weighted<- read.table("galton.txt", header = T)
+
+
+
+
+
 
 
 # library(tidyverse)

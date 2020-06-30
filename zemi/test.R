@@ -1,3 +1,5 @@
+system("open .")
+
 # remove.packages(pkgs = "zemi")
 # devtools::build(binary = T)
 
@@ -47,34 +49,4 @@ arrows(
   lwd = 2
 )
 text(VAR * times * 1.2, colnames(temp), cex = 1.5, col = "red")
-
-
-
-
-# kdsljflkdsjfsdl ---------------------------------------------------------
-
-
-
-
-#
-
-zemi::m.dz %>% as.matrix() %>% JcPCA
-
-
-
-
-
-
-
-system("open .")
-
-zemi::m.dz %>% tbl_df()
-
-zemi::
-
-jc.pca(m.dz)
-
-
-
-
 
