@@ -1,23 +1,18 @@
-\name{count.to.case}
-\alias{count.to.case}
+\name{JcPCA}
+\alias{JcPCA}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-changing grouped data frame into ordinary data frame
-}
+因子分析関数}
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
-count.to.case(df, count.variabe)
+JcFA(m)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{df}{
-data frame with count
-}
-  \item{count.variabe}{
-variable name contains count, character \code{"Freq"}
-}
+  \item{m}{
+data frame型、内部で行列に変換, 2列のrotation 変数score}
 }
 \details{
 %%  ~~ If necessary, more details than the description above ~~
@@ -45,10 +40,9 @@ variable name contains count, character \code{"Freq"}
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{
-titanic <- as.data.frame(Titanic)
-count.to.case(titanic, "Freq")
+temp<-zemi::USCrime %>%
+zemi::JcFA(temp)
 }
-
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
 \keyword{ ~kwd1 }% use one of  RShowDoc("KEYWORDS")
